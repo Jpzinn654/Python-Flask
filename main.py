@@ -8,9 +8,9 @@ app = Flask(__name__)
 def ola_mundo():
     titulo = 'Página Inicial'
     usuario = [
-        {'Nome': 'Guilherme', 'Membro ativo': True},
-        {'Nome': 'Joao', 'Membro ativo': False},
-        {'Nome': 'Maria', 'Membro ativo': False},
+        {'nome': 'Guilherme', 'membro_ativo': True},
+        {'nome': 'Joao', 'membro_ativo': False},
+        {'nome': 'Maria', 'membro_ativo': False},
     ]
     return render_template('index.html', titulo=titulo, usuario=usuario)
 
